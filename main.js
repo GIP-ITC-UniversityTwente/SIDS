@@ -16,7 +16,7 @@ width = +svg.attr("width"),
 height = +svg.attr("height");
 
 var options = [
-	  {name: "Interrupted Goode Homolosine (Ocean)", projection: d3.geoInterruptedHomolosine().lobes(lobes_sea).scale(152)},
+	  {name: "Interrupted Goode Homolosine (Ocean)", projection: d3.geoInterruptedHomolosine().lobes(lobes_sea).scale(150)},
 		{name: "Eckert IV", projection: d3.geoEckert4().scale(175)},
 		{name: "Mollweide", projection: d3.geoMollweide().scale(165)}
 	];
@@ -41,7 +41,7 @@ menu.selectAll("option")
 	
 var projection = d3.geoInterruptedHomolosine()
 	.lobes(lobes_sea)
-	.scale(152)
+	.scale(150)
         
 var graticule = d3.geoGraticule();
 
