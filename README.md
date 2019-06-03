@@ -1,6 +1,6 @@
 # Visualizing Small Island Developing States in World Maps
 
-A d3 choropleth map with three equal-area projections inclusive of small island developing states (SIDS).
+Select preferred equal-area projection and central meridian to view world data inclusive of small island developing states (SIDS).
 
 You can access this page in [__https://gip-itc-universitytwente.github.io/SIDS/__](https://gip-itc-universitytwente.github.io/SIDS/) 
 
