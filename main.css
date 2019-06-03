@@ -1,0 +1,146 @@
+body {
+	background: #fcfcfa;
+	height: 500px;
+	position: center;
+	width: 960px;
+}
+
+h1 {
+	font-family: Sans-Serif;
+	color: #5f5f5f;
+	font-size: 18px;
+	font-weight: regular;
+	margin: 20px;
+}
+
+#projection-menu {
+	right: 10px;
+	top: 10px;
+}
+
+.stroke {
+	fill: none;
+	stroke: #000;
+	stroke-width: 3px;
+}
+
+.fill {
+	fill: #fff;
+}
+
+.graticule {
+	fill: none;
+	stroke: #777;
+	stroke-width: 0.5px;
+	stroke-opacity: 0.5;
+}
+
+.land {
+	fill: #222;
+	stroke: #fff;
+	stroke-width: 0.5px;
+}
+
+.boundary {
+	fill: none;
+	stroke: #fff;
+	stroke-width: 0.5px;
+}
+
+input[type=text], select {
+	padding: 5px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.button {
+    background-color: #dddddd;
+    border: none;
+    color: #404040;
+    border-radius: 10px;
+    padding: 5px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 10px;
+    cursor: pointer;
+}
+
+button:hover { 
+    background-color: #7bc585;
+    
+}
+
+.hidden {
+	display: none;
+}
+
+div.tooltip {
+	position: absolute;
+	left: 75px;
+	text-align: center;
+	padding: 8px;
+	font-size: 11px;
+	font-family: 'Proxima-Nova', sans-serif;
+	background: #FFFFFF;
+	border: 1px solid #989898;
+	pointer-events: none;
+	border-radius: 5px;
+  }
+
+  .tooltip:hover .tooltiptext{
+	  visibility: visible;
+  }
+/* --------- Slider --------------- */
+.coordText {
+	color: #5f5f5f;
+	font-weight: bold;
+}
+
+.coordSubtext {
+    color: #5f5f5f;
+    font-size: 15px;
+    font-style: italic;
+    margin-top: -10px;
+}
+
+.slidecontainer {
+	width: 960px;
+}
+
+.slider {
+	-webkit-appearance: none;
+	width: 100%;
+	height: 25px;
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.7;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+}
+
+.slider:hover {
+	opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 25px;
+	height: 25px;
+	background: #4CAF50;
+	cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	background: #4CAF50;
+	cursor: pointer;
+}
+/* --------- End of slider --------------- */
+
