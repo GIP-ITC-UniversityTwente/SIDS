@@ -12,13 +12,13 @@
 	];
 
 var svg = d3.select("#mapSVG"),
-width = +svg.attr("width"),
-height = +svg.attr("height");
+	width = +svg.attr("width"),
+	height = +svg.attr("height")
 
 var options = [
-	  {name: "Interrupted Goode Homolosine (Ocean)", projection: d3.geoInterruptedHomolosine().lobes(lobes_sea).scale(150)},
-		{name: "Eckert IV", projection: d3.geoEckert4().scale(175)},
-		{name: "Mollweide", projection: d3.geoMollweide().scale(165)}
+	{name: "Interrupted Goode Homolosine (Ocean)", projection: d3.geoInterruptedHomolosine().lobes(lobes_sea).scale(150)},
+	{name: "Eckert IV", projection: d3.geoEckert4().scale(175)},
+	{name: "Mollweide", projection: d3.geoMollweide().scale(165)}
 	];
 
 /**
@@ -52,8 +52,8 @@ var defs = svg.append("defs");
 
 // Define the div for the tooltip
 var tooltip = d3.select("#mapWrapper")
-						.append("div")
-						.attr("class", "hidden tooltip");
+	.append("div")
+	.attr("class", "hidden tooltip");
 
 defs.append("path")
     .datum({type: "Sphere"})
@@ -84,12 +84,12 @@ svg.append("path")
 
 ///////////////////Load geojson data/////////////////////////
 //Define color scale
-// Threshold scale, maps values below first element of domain to first element of range,
-// and values above domain[n] to range[n+1]
+//Threshold scale, maps values below first element of domain to first element of range,
+//and values above domain[n] to range[n+1]
 var color = d3.scaleThreshold()
   .domain([25, 50])
   //.clamp(true)
-	.range(["rgb(254,224,210)", "rgb(252,146,114)","rgb(222,45,38)"]);
+	.range(["#fee0d2", "#fc9272","#de2d26"]);
 
 //Get country name
 function nameFn(d){
@@ -111,7 +111,7 @@ function Pov(d){
 function fillFn(d){
 		//console.log(d);
 		if (d.properties.PovPPT==null) {
-			return "rgb(209,211,212)";
+			return "#d1d3d4";
 		}
   return color(Pov(d));
 	}

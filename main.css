@@ -1,16 +1,22 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+
 body {
 	background: #fcfcfa;
-	height: 500px;
+	height: auto;
 	position: center;
-	width: 960px;
+	width: auto;
 }
 
 h1 {
 	font-family: Sans-Serif;
 	color: #5f5f5f;
-	font-size: 18px;
+	font-size: 21px;
 	font-weight: regular;
-	margin: 20px;
+	margin: 50px 0 25px 0;
 }
 
 #projection-menu {
@@ -20,7 +26,7 @@ h1 {
 
 .stroke {
 	fill: none;
-	stroke: #000;
+	stroke: #5f5f5f;
 	stroke-width: 3px;
 }
 
@@ -59,20 +65,19 @@ input[type=text], select {
 .button {
     background-color: #dddddd;
     border: none;
-    color: #404040;
-    border-radius: 10px;
-    padding: 5px 30px;
+    color: #474747;
+    border-radius: 5px;
+    padding: 7px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
     margin: 4px 10px;
     cursor: pointer;
 }
 
 button:hover { 
-    background-color: #7bc585;
-    
+    background-color: #d8d8d8;
 }
 
 .hidden {
@@ -95,29 +100,39 @@ div.tooltip {
   .tooltip:hover .tooltiptext{
 	  visibility: visible;
   }
+
+  .legend {
+	width: 900px;
+	height: 80px;
+	justify-content: center;
+}
+
 /* --------- Slider --------------- */
 .coordText {
+	font-family: Sans-Serif;
 	color: #5f5f5f;
 	font-weight: bold;
 }
 
 .coordSubtext {
-    color: #5f5f5f;
-    font-size: 15px;
+	font-family: Sans-Serif;
+	color: #5f5f5f;
+    font-size: 13px;
     font-style: italic;
     margin-top: -10px;
 }
 
 .slidecontainer {
-	width: 960px;
+	justify-content: center;
 }
 
 .slider {
 	-webkit-appearance: none;
-	width: 100%;
+	width: 960px;
 	height: 25px;
-	background: #d3d3d3;
+	background:#e3e3e3;
 	outline: none;
+	margin-bottom: 25px;
 	opacity: 0.7;
 	-webkit-transition: .2s;
 	transition: opacity .2s;
@@ -130,16 +145,20 @@ div.tooltip {
 .slider::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	appearance: none;
-	width: 25px;
-	height: 25px;
-	background: #4CAF50;
+	box-shadow: 0px 0px 1px #525863;
+	border-radius: 5px;
+	border: 1px  #707f99;
+	width: 27px;
+	height: 27px;
+	background: #3182bd;
 	cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
-	width: 25px;
-	height: 25px;
-	background: #4CAF50;
+	width: 27px;
+	height: 27px;
+	border-radius: 5px;
+	background: #3182bd;
 	cursor: pointer;
 }
 /* --------- End of slider --------------- */
