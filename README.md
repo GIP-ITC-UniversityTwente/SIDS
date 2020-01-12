@@ -1,4 +1,4 @@
-# Visualizing Small Island Developing States in World Maps
+# Visualizing Small Island Developing States in a World Map
 
 Select an equal-area projection and rotate the map to view world data inclusive of small island developing states (SIDS).
 
