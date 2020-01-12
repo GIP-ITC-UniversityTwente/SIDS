@@ -1,6 +1,6 @@
 # Visualizing Small Island Developing States in a World Map
 
-Select an equal-area projection and rotate the map to view world data inclusive of small island developing states (SIDS).
+Select an equal-area projection and rotate the map to view world data inclusive of Small Island Developing States (SIDS).
 
 You can access this page in [__https://gip-itc-universitytwente.github.io/SIDS/__](https://gip-itc-universitytwente.github.io/SIDS/) 
 
