@@ -207,21 +207,11 @@ function projectionTween(rotation, proje) {
 		  if (typeof(proje)=='undefined'){
 				var projection = options[menu.property('selectedIndex')].projection
 				.rotate(rotation)
-				//.scale(152.63)
-				//.translate([width / 2, height / 2])
-				//.precision(0.1);
-				
+
 		  }else{
-//			  if(options[menu.property('selectedIndex')].name=='Interrupted Goode Homolosine (Ocean)'){
-//				document.getElementById("myRange").value="160"
-//				document.getElementById("centerCoord").innerHTML="160"
-//				rotation=[160,0]
-//			  }
+
 			var projection = proje
 			.rotate(rotation)
-			//.scale(152.63)
-			//.translate([width / 2, height / 2])
-			//.precision(0.1);
 			  
 		  }
 			
