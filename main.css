@@ -147,15 +147,15 @@ div.tooltip {
 	appearance: none;
 	box-shadow: 0px 0px 1px #525863;
 	border-radius: 5px;
-	width: 23px;
-	height: 27px;
+	width: 25px;
+	height: 25px;
 	background: #3182bd;
 	cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
-	width: 23px;
-	height: 27px;
+	width: 25px;
+	height: 25px;
 	border-radius: 5px;
 	box-shadow: 0px 0px 1px #525863;
 	background: #3182bd;
